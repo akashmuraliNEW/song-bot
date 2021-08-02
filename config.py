@@ -6,8 +6,8 @@ class Config:
     APP_ID = int(os.environ.get("APP_ID", ''))
     API_HASH = os.environ.get("API_HASH", "")
     BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
-    START_MSG = os.environ.get("START_MSG", "<b>Hi {},\nIam A Simple Youtube to Mp3 Downloader Bot,</b>\n\nSend me Any Songs name, I can help you with uploading that to TG")
-    START_IMG = os.environ.get("START_IMG", "https://telegra.ph/file/2a35fca576aa49de77c98.jpg")
-    OWNER = os.environ.get("OWNER", "shamilhabeeb") 
+    START_MSG = os.environ.get("START_MSG", "<b>Hi {},\nIam A Song A Song Downloader Bot Exclusively Made For TG - Musics 🎶\nJoin My Group & See What Can I Do 😎")
+    START_IMG = os.environ.get("START_IMG", "https://telegra.ph/file/5e3f155ba53fba8bde319.jpg")
+    OWNER = os.environ.get("OWNER", "TG_MusicsChat") 
     DOWNLOAD_LOCATION = os.environ.get("DOWNLOAD_LOCATION", "./DOWNLOADS/")
     msg = {}
