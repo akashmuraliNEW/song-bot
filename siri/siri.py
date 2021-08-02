@@ -11,11 +11,11 @@ from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 
 BUTTON1="TG - Musics 🎶"
-B2="telegram.dog/NickxFury_bot"
+B2="https://t.me/BeyTG"
 OWNER="Owner"
 GITCLONE="https://t.me/TG_MusicsChat"
 ABS="Developer"
-APPER="BeyTG"
+APPER="NickxFury"
 
 @Client.on_message(filters.command('start') & filters.private)
 async def start(client, message):
@@ -74,7 +74,7 @@ def a(client, message):
 
         except Exception as e:
             print(e)
-            m.edit('**👎 Nothing to found 🥺 Try with another!**')
+            m.edit('**👎 Nothing found 🥺 With This Name.Try with another!**')
             return
     except Exception as e:
         m.edit(
@@ -82,13 +82,13 @@ def a(client, message):
         )
         print(str(e))
         return
-    m.edit("**m.youtube.com responded, uploading...**")
+    m.edit("<code>Uploading Your File ... Please Wait...</code>")
     try:
         with youtube_dl.YoutubeDL(ydl_opts) as ydl:
             info_dict = ydl.extract_info(link, download=False)
             audio_file = ydl.prepare_filename(info_dict)
             ydl.process_info(info_dict)
-        rep = f'🎶 <b>Title:</b> <a href="{link}">{title}</a>\n⌚ <b>Duration:</b> <code>{duration}</code>\n📻 <b>Uploaded By:</b> <a href="https://t.me/TG_MusicsChat">[TG - Musics 🎶]</a>'
+        rep = f'🎶 <b>Title:</b> <a href="{link}">{title}</a>\n⌚ <b>Duration:</b> <code>{duration}</code>\n📻 <b>Uploaded By:</b> <a href="https://t.me/TG_MusicsChat">[TG Musics]</a>'
         secmul, dur, dur_arr = 1, 0, duration.split(':')
         for i in range(len(dur_arr)-1, -1, -1):
             dur += (int(dur_arr[i]) * secmul)
@@ -96,7 +96,7 @@ def a(client, message):
         message.reply_audio(audio_file, caption=rep, parse_mode='HTML',quote=False, title=title, duration=dur, performer=performer, thumb=thumb_name)
         m.delete()
     except Exception as e:
-        m.edit('**An Internal error occured; Report This @redbullfed!!**')
+        m.edit('**An Internal error occured; Report This @BeyTG!!**')
         print(e)
     try:
         os.remove(audio_file)
