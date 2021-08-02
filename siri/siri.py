@@ -10,12 +10,12 @@ from config import Config
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 
-BUTTON1="📜 Source Code 📜"
+BUTTON1="TG - Musics 🎶"
 B2="telegram.dog/NickxFury_bot"
 OWNER="Owner"
-GITCLONE="https://t.me/AdhavaaBiriyaniKittiyalo"
+GITCLONE="https://t.me/TG_MusicsChat"
 ABS="Developer"
-APPER="NickxFury"
+APPER="BeyTG"
 
 @Client.on_message(filters.command('start') & filters.private)
 async def start(client, message):
