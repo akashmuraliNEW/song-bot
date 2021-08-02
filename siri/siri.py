@@ -74,11 +74,11 @@ def a(client, message):
 
         except Exception as e:
             print(e)
-            m.edit('**👎 Nothing found 🥺 With This Name.Try with another!**')
+            m.edit('<code>👎 Nothing found 🥺 With This Name.Try with another!!</code>')
             return
     except Exception as e:
         m.edit(
-            "**found nothing, please try again**"
+            "<code>👎 Nothing found 🥺 With This Name.Try with another!</code>"
         )
         print(str(e))
         return
