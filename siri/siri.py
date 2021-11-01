@@ -13,7 +13,7 @@ from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 
 BUTTON1="TG - Musics 🎶"
-B2="https://t.me/BeyTG"
+B2="https://t.me/TG_MusicsChat"
 OWNER="Owner"
 GITCLONE="https://t.me/TG_MusicsChat"
 ABS="Developer"
@@ -98,7 +98,7 @@ def a(client, message):
         message.reply_audio(audio_file, caption=rep, parse_mode='HTML',quote=False, title=title, duration=dur, performer=performer, thumb=thumb_name)
         m.delete()
     except Exception as e:
-        m.edit('**An Internal error occured; Report This @BeyTG!!**')
+        m.edit('**An Internal error occured**')
         print(e)
     try:
         os.remove(audio_file)
