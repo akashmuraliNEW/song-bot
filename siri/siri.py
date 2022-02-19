@@ -98,7 +98,7 @@ def a(client, message):
         message.reply_audio(audio_file, caption=rep, parse_mode='HTML',quote=False, title=title, duration=dur, performer=performer, thumb=thumb_name)
         m.delete()
     except Exception as e:
-        m.edit('**An Internal error occured**')
+        m.edit('**An Internal Error Occured. Try Again Later**')
         print(e)
     try:
         os.remove(audio_file)
