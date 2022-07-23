@@ -9,12 +9,12 @@ import time
 from config import Config
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
-ABS="Developer"
-APPER="shamilhabeeb"
+ABS="Movie Group"
+APPER="ℝ𝕖𝕓𝕖𝕜𝕒𝕙"
 OWNER="Owner"
-GITCLONE="github.com/shamilhabeebnelli/song-bot"
-B2="telegram.dog/shamilhabeeb"
-BUTTON1="📜 Source Code 📜"
+GITCLONE="https://t.me/music_mania_Songs"
+B2="https://t.me/MM_Movies_world1"
+BUTTON1="Music Group"
 
 def time_to_seconds(time):
     stringt = str(time)
